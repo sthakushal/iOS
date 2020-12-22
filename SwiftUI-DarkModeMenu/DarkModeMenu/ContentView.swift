@@ -57,7 +57,7 @@ struct Home: View {
              }
         HStack{
             
-            Menu
+            Menu()
                 .preferredColorScheme(self.darkMode ? .dark : .light)
                 .offset(x:self.showMode ? 0 : -UIScreen.main.bounds.width/1.5)
             Spacer(minLength: 0)

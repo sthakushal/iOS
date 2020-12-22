@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(iOS 14.0, *)
 struct ContentView: View {
     var body: some View {
         
@@ -20,12 +21,14 @@ struct ContentView: View {
     }
 }
 
+@available(iOS 14.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
 
+@available(iOS 14.0, *)
 struct Home : View {
     
     @State var index = 0
@@ -55,9 +58,9 @@ struct Home : View {
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-            .tabViewStyle(PageTabViewStyle(backgroundDisplayMode: .always))
+           // .tabViewStyle(PageTabViewStyle(backgroundDisplayMode: .always))
                 
-            .navigationBarItems(trailling: Menu (content: {
+            .navigationBarItems(leading: Menu (content: {
                 
                 Button(action: {
                     
